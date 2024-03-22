@@ -1,0 +1,61 @@
+
+.bg {
+  background-image: url('../images/cover.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  display: flexbox;
+  flex-direction: column;
+  justify-content: flex-start; ;
+  align-items: left;
+  height: 100%;
+  
+}
+
+.col-md-12 h1 {
+  font-size: 5rem; /* Ajustez la taille selon vos besoins */
+  color: #000000;
+  text-align: center; /* Centrer le texte du h1 */
+  text-transform: uppercase; /* Transforme le texte en majuscules */
+  letter-spacing: 5px; /* Ajustez l'espacement entre les lettres */
+  font-weight: 700; /* Met le texte en gras */
+  line-height: 1.2; /* Met le texte en hauteur */
+  
+}
+
+.boutons {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200px;
+}
+
+.row {
+  flex: 1; /* Prend l'espace restant */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  width: 100%;
+}
+
+.bouton {
+  background-color: rgb(255, 255, 255) !important; /* Couleur de fond des boutons */
+  color: rgb(6, 6, 6) !important; /* Couleur du texte des boutons */
+  border: none !important; /* Supprime la bordure des boutons Bootstrap */
+  padding: 20px 40px !important; /* Ajustez l'espacement interne selon vos besoins */
+  margin-bottom: 70px;
+  min-width: 30rem !important; /* Définit une largeur minimum pour tous les boutons */
+  border-radius: 60px !important; /* Coins plus anguleux */
+  text-transform: uppercase; /* Transforme le texte en majuscules */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Ajoute une ombre */
+}
+
+.bouton:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Ajoute une ombre */
+  background-color: #000000 !important;
+  color: aliceblue !important;
+}

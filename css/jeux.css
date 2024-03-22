@@ -1,0 +1,39 @@
+    .navcolor{
+        background-color: #CF73E2 !important;
+    }
+
+    .game-col{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+    }
+
+  .game-card {
+    position: relative;
+    overflow: hidden; /* Assure que le cœur reste à l'intérieur de la card */
+    background-color: #eac7f1 !important; /* Couleur de fond violet */
+    color: #ffffff; /* Change la couleur du texte en blanc pour le contraste */
+    padding: 2rem;
+    border-radius: 0% !important;
+    margin-bottom: 50px; /* Ajoute 20px de marge en bas */
+    }
+
+    .game-image {
+        margin-top: 10px; /* Ajoute une marge autour de l'image */
+    }
+
+
+    .rating .fa-star {
+        color: #ffd700; /* Couleur des étoiles */
+    }
+
+    .rating .checked {
+        color: orange;
+    }
+
+
+    .boutona {
+        margin-top: 10px;
+    }

@@ -1,0 +1,58 @@
+ <!-- Modal de modification pour le jeu -->
+ <div class="modal fade" id="editModal<?= $jeu->getIdJeu() ?>" tabindex="-1" aria-labelledby="editModalLabel<?= $jeu->getIdJeu() ?>" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <form action="chemin_vers_script_de_modification.php" method="POST" enctype="multipart/form-data">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="editModalLabel<?= $jeu->getIdJeu() ?>">Modifier Jeu</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <input type="hidden" name="id" value="<?= $jeu->getIdJeu() ?>">
+                                                            <div class="mb-3">
+                                                                <label for="nom" class="form-label">Nom</label>
+                                                                <input type="text" class="form-control" name="nom" value="<?= htmlspecialchars($jeu->getNom()) ?>">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="nom" class="form-label">Studio</label>
+                                                                <input type="text" class="form-control" name="studio" value="<?= htmlspecialchars($jeu->getStudio()) ?>">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="nom" class="form-label">Age Minimum</label>
+                                                                <input type="text" class="form-control" name="pegi" value="<?= htmlspecialchars($jeu->getAgeMin()) ?>">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="nom" class="form-label">Genre</label>
+                                                                <input type="text" class="form-control" name="genre" value="<?= htmlspecialchars($jeu->getGenre()) ?>">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="nom" class="form-label">Date de Sortie</label>
+                                                                <input type="text" class="form-control" name="date_sortie" value="<?= htmlspecialchars($jeu->getDateSortie()) ?>">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="regles" class="form-label">Règles</label>
+                                                                <textarea class="form-control" id="regles" name="regles" rows="4"><?= htmlspecialchars($jeu->getRegles()) ?></textarea>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="description" class="form-label">Description</label>
+                                                                <textarea class="form-control" id="description" name="description" rows="4"><?= htmlspecialchars($jeu->getDescription()) ?></textarea>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="image" class="form-label">Image</label>
+                                                                <div>
+                                                                    <img id="imageActuelle" src="../../images/jeux/<?= htmlspecialchars($jeu->getImage()) ?>" alt="Image du jeu" style="max-width: 100%; max-height: 200px;">
+                                                                </div>
+                                                                <label for="nouvelleImage" class="form-label mt-3">Modifier l'image</label>
+                                                                <input type="file" class="form-control" id="nouvelleImage" name="nouvelleImage">
+                                                            </div>
+
+
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                                            <button type="submit" class="btn btn-primary">Sauvegarder les changements</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>

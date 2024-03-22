@@ -1,0 +1,26 @@
+.navcolor{
+    background-color: #CF73E2 !important;
+}
+
+#container1 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cover-image {
+    height: 30rem; /* Hauteur fixe de l'image */
+    object-fit: contain; /* Ajuste et coupe l'image pour remplir le conteneur */
+}
+
+#btnaa {
+    border-radius: 0 !important;
+    margin: 0;
+    padding: 10x , 5x;
+}
+
+.fa-star {
+    color: orange;
+}
+
+  

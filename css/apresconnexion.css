@@ -1,0 +1,96 @@
+.navcolor{
+    background-color: #CF73E2 !important;
+}
+
+.carousel-item {
+    height: 500px; /* Hauteur fixe pour le carrousel */
+  }
+  
+  .carousel-item img {
+    object-fit: cover; /* Assure que l'image couvre l'espace disponible */
+    object-position: center; /* Centre l'image */
+    min-height: 100%; /* Assure que l'image remplit la hauteur */
+  }
+  
+  .container.carousel-container {
+    max-width: 80%; /* Ajustez en fonction de la largeur désirée pour le carrousel */
+    margin: auto; /* Centrer le conteneur dans la vue */
+  }
+
+  .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Noir avec 50% de transparence */
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 100px ;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement */
+    color: #fff;
+    text-align: center; /* Garantit que le texte est centré horizontalement */
+    padding: 15px; /* Ajoute un peu d'espace autour du contenu */
+
+  }
+  
+  .carousel-caption h5 {
+    font-size: 2.5rem; /* Agrandit le titre */
+    font-weight: bold;
+    margin-bottom: 15px; /* Espace entre le titre et le paragraphe */
+  }
+  
+  .carousel-caption p {
+    font-size: 1.5rem; /* Agrandit le paragraphe */
+    margin-bottom: 25px; /* Espace entre le paragraphe et le bouton */
+  }
+  
+  .carousel-caption .btn {
+    font-size: 1.2rem; /* Agrandit le texte dans le bouton */
+    padding: 10px 30px; /* Plus grand padding pour un bouton plus grand */
+  }
+
+  .game-col{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .game-card {
+    position: relative;
+    overflow: hidden; /* Assure que le cœur reste à l'intérieur de la card */
+    background-color: #d18ede !important; /* Couleur de fond violet */
+    color: #ffffff; /* Change la couleur du texte en blanc pour le contraste */
+    padding: 2rem;
+    border-radius: 0% !important;
+    margin-bottom: 50px; /* Ajoute 20px de marge en bas */
+    }
+
+    .game-image {
+        margin-top: 20px; /* Ajoute une marge autour de l'image */
+    }
+
+
+.rating .fa-star {
+    color: #ffd700; /* Couleur des étoiles */
+}
+
+.rating .checked {
+    color: orange;
+}
+
+.boutona {
+    margin-top: 10px;
+}
+
+  

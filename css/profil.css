@@ -1,0 +1,11 @@
+.navcolor{
+    background-color: #CF73E2 !important;
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
